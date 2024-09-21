@@ -7,14 +7,13 @@ public class Main {
     
     System.out.println("Logs from your program will appear here!");
 
-     Uncomment this block to pass the first stage
+     
      ServerSocket serverSocket = null;
      Socket clientSocket = null;
      int port = 6379;
      try {
      serverSocket = new ServerSocket(port);
-     Since the tester restarts your program quite often, setting SO_REUSEADDR
-     ensures that we don't run into 'Address already in use' errors
+     
      serverSocket.setReuseAddress(true);
          
          clientSocket = serverSocket.accept();
